@@ -14,6 +14,12 @@ GLASD is a black-box optimization tool for optimizing any objective function ove
 
 # Main functions
 
+The main functions of GLASD are contained within the folder 'GLASD main functions'.
+
+- 'GLASD.m' is a black-box optimizer over the hyperrectangular space.
+
+- 'GLASD_PD.m' is a black-box optimizer over the full-rank correlation matrix space.
+
 
 
 
