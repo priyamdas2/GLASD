@@ -8,7 +8,7 @@ GLASD is a black-box optimization tool for optimizing any objective function ove
 
 - GLASD benchmark study on correlation matrix space: See folder 'Benchmark'.
 
-- GLASD simulation study for robust correlation matrix estimation: See folder 'Case study'.
+- GLASD simulation study for robust correlation matrix estimation: See folder 'Simulation study'.
 
 - TCPA data-based breast cancer proteomics network analysis: See folder 'Case study'.
 
