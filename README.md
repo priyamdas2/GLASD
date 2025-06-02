@@ -1,1 +1,5 @@
 # GLASD
+
+- berqtb
+
+- -thbtrnh
