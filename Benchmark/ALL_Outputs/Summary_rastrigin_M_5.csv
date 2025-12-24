@@ -1,0 +1,9 @@
+Row,min value,value s.e.,time [mean (se)]
+GLASD,4.40e+01,1.94e+01,0.02 (0.006)
+fmincon:active-set,5.97e+01,5.47e+01,0.12 (0.050)
+fmincon:interior-point,1.53e+02,4.04e+01,0.15 (0.040)
+fmincon:sqp,4.78e+01,2.55e+01,0.04 (0.008)
+Manopt:barzilai-borwein,1.99e+00,1.54e+01,2.66 (0.106)
+Manopt:conjugate-gradient,2.37e+02,5.28e+01,0.51 (0.193)
+Manopt:steepest-descent,1.93e+02,4.66e+01,1.69 (0.308)
+Manopt:trust-region,2.37e+02,5.38e+01,5.55 (0.155)
