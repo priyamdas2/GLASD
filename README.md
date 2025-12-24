@@ -53,7 +53,22 @@ GLASD/
 
 ## 📌 Problem Setting
 
-GLASD addresses the problem of **robust correlation matrix estimation** in high-dimensional settings where data may exhibit outliers, heavy tails, or other departures from Gaussian assumptions. Rather than committing to a single likelihood or contamination model, GLASD formulates correlation estimation as a **general loss-based optimization problem** over the space of positive definite correlation matrices with unit diagonal constraints. This formulation accommodates a wide class of Mahalanobis-type objectives, including Gaussian, Huber-type, truncated, and redescending loss functions, while explicitly acknowledging the non-convex, non-smooth, and sometimes discontinuous nature of the resulting optimization landscape.
+GLASD is developed to address **robust estimation of correlation matrices** in high-dimensional settings where observations may exhibit outliers, heavy tails, or other departures from Gaussian assumptions. In such regimes, the sample correlation matrix is both statistically unstable and highly sensitive to extreme observations, motivating the use of alternative loss functions that control the influence of large Mahalanobis distances.
+
+Rather than committing to a single likelihood or contamination model, GLASD formulates correlation estimation as a **general loss-based optimization problem** over the constrained space of positive definite correlation matrices with unit diagonal. Specifically, the target estimator is defined as the solution to
+
+<pre>
+minimize    f(C)
+subject to  C ∈ 𝒞_M
+</pre>
+
+where  
+- \( 𝒞_M \) denotes the space of full-rank \( M \times M \) correlation matrices, and  
+- \( f(C) \) is a user-specified Mahalanobis-type objective function.
+
+This formulation accommodates a wide class of loss functions, including Gaussian likelihoods, Huber-type losses, truncated quadratic losses, and redescending M-estimators (e.g., Tukey’s biweight). Importantly, the resulting optimization problem is typically **non-convex, non-smooth, and sometimes discontinuous**, and is defined over a geometrically constrained parameter space.
+
+GLASD is designed to solve this problem directly—without requiring gradient information, smoothness assumptions, or problem-specific algorithmic tailoring—by combining a geometry-aware reparameterization of the correlation matrix space with a derivative-free global optimization strategy.
 
 ---
 
