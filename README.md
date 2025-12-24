@@ -59,7 +59,7 @@ Rather than committing to a single likelihood or contamination model, GLASD form
 
 <pre>
 minimize    f(C)
-subject to  C ∈ 𝒞_M
+subject to  C ∈ 𝒞<sub>M</sub>sub>
 </pre>
 
 where  
