@@ -97,7 +97,15 @@ Together, these figures summarize how GLASD enforces correlation constraints, ad
 
 ## 📐 Theoretical Guarantees
 
-GLASD is equipped with formal **global convergence guarantees** under mild regularity conditions on the objective function, requiring only boundedness and measurability. In addition, when applied to loss-based correlation estimation, the resulting estimators are shown to be **statistically consistent** under a uniform law of large numbers. Importantly, these results hold without assuming convexity, differentiability, or smoothness of the loss function, making GLASD applicable to truncated and redescending objectives that fall outside the scope of classical optimization theory.
+GLASD is supported by rigorous theoretical results that address both optimization and statistical estimation:
+
+- **Global convergence of GLASD**  
+  Under mild regularity conditions on the objective function—specifically boundedness and measurability over a compact domain—GLASD is guaranteed to converge globally to a minimum of the target objective. These guarantees do not rely on convexity, differentiability, or smoothness, and remain valid for non-smooth or discontinuous loss functions through the algorithm’s controlled stochastic exploration mechanism.
+
+- **Statistical consistency of GLASD-based estimators**  
+  When GLASD is used to optimize loss-based Mahalanobis objectives for correlation estimation, the resulting estimators are shown to be statistically consistent under a uniform law of large numbers. In particular, the GLASD-based estimator converges to the population-level minimizer of the corresponding loss function, even when the objective is non-convex or non-smooth.
+
+Together, these results justify the use of GLASD as a principled optimization framework for robust correlation estimation under general loss functions that fall outside the scope of classical likelihood-based or gradient-driven methods.
 
 ---
 
