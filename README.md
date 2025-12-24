@@ -163,8 +163,13 @@ This case study highlights GLASD’s ability to recover stable and interpretable
 
 This repository is intended to serve both as a **research artifact accompanying the manuscript** and as a **general-purpose implementation** for robust, geometry-aware correlation matrix optimization.
 
+---
 
+## 💬 Contact
 
+For questions, please contact:  
+**Priyam Das**  
+[dasp4@vcu.edu](mailto:dasp4@vcu.edu)
 
 
 
