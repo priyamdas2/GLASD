@@ -34,23 +34,17 @@ To reproduce the benchmark comparison table reported in the manuscript, proceed 
 
 **1.1 GLASD benchmarks**
 
-Run  
-`Benchmark_study_GLASD.m`  
-for \( M \in \{5, 10, 20, 50\} \) and `input_vals = [1, 2, 3, 4]`.  
-All output files are automatically saved in the `ALL_Outputs/` directory.
+Run `Benchmark_study_GLASD.m` for \( M \in \{5, 10, 20, 50\} \) and `input_vals = [1, 2, 3, 4]`. All output files are automatically saved in the `ALL_Outputs/` directory.
 
 **1.2 Competing methods benchmarks**
 
 Run  
-`Benchmark_study_others.m`  
-for \( M \in \{5, 10, 20, 50\} \) and `input_vals = [1, 2, 3, 4]`.  
-All output files are automatically saved in the `ALL_Outputs/` directory.
+`Benchmark_study_others.m` for \( M \in \{5, 10, 20, 50\} \) and `input_vals = [1, 2, 3, 4]`. All output files are automatically saved in the `ALL_Outputs/` directory.
 
 **1.3 Summarize results**
 
 After completing the above runs, execute  
-`ALL_Outputs/Summary_ALL.m`,  
-which aggregates all generated outputs and produces the benchmark summary table reported in the manuscript.
+`ALL_Outputs/Summary_ALL.m`, which aggregates all generated outputs and produces the benchmark summary table reported in the manuscript.
 
 ---
 
@@ -60,21 +54,13 @@ To reproduce the boxplots based on repeated simulations, proceed as follows.
 
 **2.1 GLASD (100 replications)**
 
-Run  
-`Benchmark_study_100_reps_GLASD.m`  
-for \( M = 10 \) and `input_vals = [1, 2, 3, 4]`.  
-All output files are automatically saved in the `ALL_Outputs/` directory.
+Run `Benchmark_study_100_reps_GLASD.m` for \( M = 10 \) and `input_vals = [1, 2, 3, 4]`. All output files are automatically saved in the `ALL_Outputs/` directory.
 
 **2.2 Competing methods (100 replications)**
 
-Run  
-`Benchmark_study_100_reps_others.m`  
-for \( M = 10 \) and `input_vals = [1, 2, 3, 4]`.  
-All output files are automatically saved in the `ALL_Outputs/` directory.
+Run `Benchmark_study_100_reps_others.m` for \( M = 10 \) and `input_vals = [1, 2, 3, 4]`. All output files are automatically saved in the `ALL_Outputs/` directory.
 
 **2.3 Generate boxplots**
 
-Finally, run  
-`ALL_Outputs/Summary_ALL_100_reps_boxplot.R`,  
-which constructs the benchmark boxplots from the aggregated outputs and reproduces the figures reported in the manuscript.
+Finally, run `ALL_Outputs/Summary_ALL_100_reps_boxplot.R`, which constructs the benchmark boxplots from the aggregated outputs and reproduces the figures reported in the manuscript.
 
