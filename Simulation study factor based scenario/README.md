@@ -27,5 +27,4 @@ Run `Method_GLASD.m` for `p = 50, 100`, with `Sigma_u_regime = 'diagonal'` and `
 7) **Summarize results**
 After completing all runs, execute `summary_output.m`, which aggregates the results and produces the summary tables reported in the manuscript for this scenario.
 
-**Note.** Originally, the `Data/` folder contained more than 400 generated data files and the `Output/` folder contained more than 600 generated output files. Due to their large size, these files are not included in this repository. Only the code files required to fully reproduce the results are provided.
-
+**Note.** Originally, the `Data/` folder contained more than 400 generated data files and the `Output/` folder contained more than 600 generated output files. Due to their large size, these files are not included in this repository. 
