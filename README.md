@@ -1,25 +1,49 @@
-# GLASD
+# GLASD: Global Adaptive Stochastic Descent for Robust Correlation Estimation
 
-GLASD is a black-box optimization tool for optimizing any objective function over the full-rank correlation matrix space (i.e., symmetric positive definite matrices with unit diagonals).
+This repository provides an implementation of **GLASD (Global Adaptive Stochastic Descent)**, a loss-agnostic, black-box optimization framework for **robust estimation of high-dimensional correlation matrices** under general Mahalanobis-type loss functions. The methods and experiments in this repository correspond to the manuscript:
 
-- GLASD was initially developed on a hyperrectangular space, then adapted to optimize over the correlation matrix space.
+> **Robust Correlation Estimation under General Loss Functions**  
+> Priyam Das, Department of Biostatistics, Virginia Commonwealth University
 
-- GLASD benchmark study on hyperrectangular space: See folder 'Benchmark GLASD box'.
+GLASD is designed to reliably optimize **non-convex, non-smooth, and even discontinuous objectives** over the space of positive definite correlation matrices, without requiring gradient information or smoothness assumptions.
 
-- GLASD benchmark study on correlation matrix space: See folder 'Benchmark'.
+---
 
-- GLASD simulation study for robust correlation matrix estimation: See folder 'Simulation study'.
+## Key Features
 
-- TCPA data-based breast cancer proteomics network analysis: See folder 'Case study'.
+- **Loss-agnostic framework**  
+  Supports Gaussian, Huber, truncated quadratic, Tukey’s biweight, and other user-defined Mahalanobis losses.
 
-# Main functions
+- **Geometry-aware optimization**  
+  Uses a bijective hyperspherical (angular) parameterization of the correlation matrix space to enforce constraints by construction.
 
-The main functions of GLASD are contained within the folder 'GLASD main functions'.
+- **Derivative-free global optimization**  
+  Combines adaptive stochastic coordinate descent with controlled forced exploration, enabling reliable global search.
 
-- 'GLASD.m' is a black-box optimizer over the hyperrectangular space.
+- **Theoretical guarantees**  
+  Includes global convergence guarantees and statistical consistency results under mild regularity conditions.
 
-- 'GLASD_PD.m' is a black-box optimizer over the full-rank correlation matrix space.
+- **Practical applicability**  
+  Demonstrated through extensive simulations and real-data applications, including cancer proteomic and microbiome datasets.
 
+---
+
+## Repository Structure
+
+```text
+
+GLASD/
+├── Benchmark GLASD Box/                      # Empirical convergence benchmarks for GLASD and competing optimizers on box-constrained test functions (Ackley, Griewank, Rastrigin, Rosenbrock)
+├── Benchmark/                                # Benchmark comparison studies for robust correlation estimation methods reported in the manuscript
+├── Case study high dim/                      # High-dimensional real-data case study with CRC microbiome analyses
+├── Case study/                               # Real-data case study with cancer proteomics data
+├── Simulation study factor based scenario/   # Simulation studies under approximate factor model settings 
+├── Simulation study non-factor scenario/     # Simulation studies without factor structure 
+├── images/                                   # Figures used in the manuscript and supplementary material
+├── README.md                                 # Project overview and usage instructions
+
+
+```
 
 
 
