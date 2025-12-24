@@ -1,6 +1,6 @@
 ## Simulation Study: Non–Factor-Based Scenario
 
-This simulation study evaluates robust correlation estimation methods in settings without latent factor structure, following the design described in Section 6.1 of the manuscript. The study compares the classical Gaussian estimator, Tyler’s M-estimator, and several loss-based estimators optimized via GLASD under multiple contamination mechanisms, correlation structures, and dimensional regimes.
+This simulation study evaluates robust correlation estimation methods in settings without latent factor structure, following the design described in `Robust correlation estimation without factor structure` section of the manuscript. The study compares the classical Gaussian estimator, Tyler’s M-estimator, and several loss-based estimators optimized via GLASD under multiple contamination mechanisms, correlation structures, and dimensional regimes.
 
 Data are generated under two correlation structures—Block-Toeplitz (sparse) and non-sparse—and four distributional settings: asymmetric Gaussian contamination (row-wise, column-wise, and random elementwise) and heavy-tailed sampling from a multivariate t-distribution. Performance is assessed across three dimensional regimes: \((p,n) = (20,100), (50,500), (100,500)\).
 
