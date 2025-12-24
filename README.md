@@ -152,7 +152,7 @@ Using a Huber-loss-based objective, GLASD estimates the correlation matrix direc
 When taxa are ordered by taxonomic order, the resulting correlation matrix reveals clear within-order dependence patterns and coherent cross-order associations, consistent with known microbial organization in CRC.
 
 <p align="center">
-  <img src="images/CRC_Correlation_OrderLevel.pdf" width="70%">
+  <img src="images/CRC_Correlation_OrderLevel.jpg" width="70%">
 </p>
 
 *Order-level correlation heatmap estimated using GLASD with Huber loss. Colors represent Pearson correlations from −1 (blue) to 1 (red).*
