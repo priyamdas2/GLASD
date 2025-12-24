@@ -65,11 +65,16 @@ Once reformulated, optimization is performed using **Global Adaptive Stochastic 
 
 The overall geometry-aware optimization pipeline is illustrated in the following figures (available in the `images/` folder):
 
-- **Correlation matrix geometry and angular mapping**  
-  `images/GLASD_mapping_v6.jpg`
+**Correlation matrix geometry and angular mapping** 
+<p align="center">
+  <img src="images/GLASD_mapping_v6.jpg" width="70%">
+</p
 
-- **GLASD algorithmic flowchart**  
-  `images/GLASD_flowchart_v8.jpg`
+
+**GLASD algorithmic flowchart**
+<p align="center">
+  <img src="images/GLASD_flowchart_v8.jpg" width="70%">
+</p
 
 Together, these figures summarize how GLASD enforces correlation constraints, adapts step sizes and directional probabilities, and balances exploitation with global exploration.
 
@@ -92,10 +97,11 @@ To assess optimization performance on structured constrained domains, GLASD is b
 
 These functions are embedded into the correlation matrix space by evaluating them on the off-diagonal entries of valid correlation matrices. Summary comparisons and variability across dimensions are reported in the manuscript and supplementary material.
 
-Representative benchmark visualizations are provided in the `images/` folder, including boxplots summarizing optimization performance across repeated runs.
-- **Correlation matrix geometry and angular mapping**  
-  `images/GLASD_mapping_v6.jpg`
+Representative benchmark visualizations are provided as boxplots below, summarizing optimization performance.
 
+<p align="center">
+  <img src="images/Boxplots_Fun_and_Time_all_functions.png" width="80%">
+</p
 ---
 
 ## 🧪 Simulation Studies
