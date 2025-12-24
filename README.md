@@ -142,11 +142,22 @@ Across both regimes, the simulation results demonstrate that GLASD yields stable
 
 ---
 
-## 🧬 Case Study: CRC Microbiome Correlation Analysis
 
-GLASD is applied to a colorectal cancer (CRC) microbiome dataset to estimate robust correlation structures among microbial taxa. Using a Huber-loss-based objective, GLASD yields a **spectrally stable and interpretable correlation estimate**, in contrast to classical estimators that exhibit numerical instability under heavy-tailed behavior.
+## 🧬 Case Study: CRC Microbiome Robust Correlation
 
-A representative heatmap from this analysis is available in the `images/` directory and is reported in the manuscript and supplementary material.
+We apply GLASD to a colorectal cancer (CRC) gut microbiome dataset with **n = 220 subjects** and **p = 287 microbial taxa** (genus level, CLR-transformed). Microbiome data are well known to exhibit heavy tails, outliers, and strong dependence, making classical correlation estimators unstable and biologically unreliable.
+
+Using a Huber-loss-based objective, GLASD estimates the correlation matrix directly over the space of positive definite correlation matrices, avoiding ad hoc eigenvalue truncation or post hoc projection. Compared to naive and Tyler-type estimators, GLASD produces a **spectrally stable** and well-conditioned correlation estimate.
+
+When taxa are ordered by taxonomic order, the resulting correlation matrix reveals clear within-order dependence patterns and coherent cross-order associations, consistent with known microbial organization in CRC.
+
+<p align="center">
+  <img src="images/CRC_Correlation_OrderLevel.png" width="70%">
+</p>
+
+*Order-level correlation heatmap estimated using GLASD with Huber loss. Colors represent Pearson correlations from −1 (blue) to 1 (red).*
+
+This case study highlights GLASD’s ability to recover stable and interpretable dependence structure in high-dimensional microbiome data where commonly used estimators fail.
 
 ---
 
