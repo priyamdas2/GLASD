@@ -78,7 +78,7 @@ GLASD operates by reparameterizing the space of correlation matrices using a **b
 
 Once reformulated, optimization is performed using **Global Adaptive Stochastic Descent**, a derivative-free algorithm that combines adaptive coordinate-wise descent with controlled stochastic exploration. The method requires only objective evaluations and does not rely on gradients, smoothness, or continuity assumptions.
 
-The overall geometry-aware optimization pipeline is illustrated in the following figures (available in the `images/` folder):
+The overall geometry-aware optimization pipeline is illustrated in the following figures:
 
 **Correlation matrix geometry and angular mapping** 
 <p align="center">
