@@ -28,6 +28,13 @@ GLASD is designed to reliably optimize **non-convex, non-smooth, and even discon
 
 ---
 
+### Notation note
+
+Throughout the code, comments, and documentation, the symbols **`M`** and **`p`** may occasionally be used interchangeably.  
+Both symbols refer to the **same quantity**: the **dimension (number of rows/columns) of the correlation matrix of interest**.
+
+---
+
 ## 📂 Repository Structure
 
 ```text
