@@ -4,9 +4,9 @@ addpath('./GLASD/');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 fun_choices = {'ackley', 'griewank', 'rosenbrock', 'rastrigin'};  % index 1, 2, 3, 4
-input_vals = [1,2,3,4];  % example
-M = 50;         % M = 5, 10, 20, 50, 100
-Num_exp = 10;  % Num_exp = 10 for M = 5, 10, 20, 50, 100.
+input_vals = [4];  % example
+M = 10;         % M = 5, 10, 20, 50, 100
+Num_exp = 100;  % Num_exp = 10 for M = 5, 10, 20, 50, 100.
 maxtime_each = 3600; % dont change
 
 GLASD_comp_times = nan(Num_exp,1);
@@ -56,10 +56,10 @@ for i = 1:length(input_vals)
         mkdir(output_folder);
     end
     
-    filename = fullfile(output_folder, ['Comp_times_GLASD_' which_fun '_M_' num2str(M) '_reps_' num2str(Num_exp) '.csv']);
+    filename = fullfile(output_folder, ['Comp_times_100_reps_GLASD_' which_fun '_M_' num2str(M) '_reps_' num2str(Num_exp) '.csv']);
     writematrix(GLASD_comp_times, filename);
     
-    filename = fullfile(output_folder, ['Funvals_GLASD_' which_fun '_M_' num2str(M) '_reps_' num2str(Num_exp) '.csv']);
+    filename = fullfile(output_folder, ['Funvals_100_reps_GLASD_' which_fun '_M_' num2str(M) '_reps_' num2str(Num_exp) '.csv']);
     writematrix(GLASD_funvals, filename);
     
     
