@@ -7,43 +7,19 @@ Data are generated under two correlation structures—Block-Toeplitz (sparse) an
 Please follow the steps below to reproduce the results reported in the manuscript.
 
 1) **Data generation**
-
-Run  
-`Data_generation.m`  
-for \((p,n) = (20,100), (50,500), (100,500)\), with  
-- `structure_options = 2` (BlockToeplitz) and `structure_options = 4` (non-sparse), and  
-- `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
+Run `Data_generation.m` for \((p,n) = (20,100), (50,500), (100,500)\), with - `structure_options = 2` (BlockToeplitz) and `structure_options = 4` (non-sparse), and - `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
 
 2) **Naive (Gaussian) estimator**
-
-Run  
-`Simulation_study_Naive.m`  
-for \((p,n) = (20,100), (50,500), (100,500)\), with  
-- `Ctype = 'BlockToeplitz'` and `'random'` (the `'random'` option corresponds to the non-sparse scenario), and  
-- `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
+Run `Simulation_study_Naive.m` for \((p,n) = (20,100), (50,500), (100,500)\), with - `Ctype = 'BlockToeplitz'` and `'random'` (the `'random'` option corresponds to the non-sparse scenario), and - `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
 
 3) **Tyler’s M-estimator**
-
-Run  
-`Simulation_study_Tyler.m`  
-for \((p,n) = (20,100), (50,500), (100,500)\), with  
-- `Ctype = 'BlockToeplitz'` and `'random'`, and  
-- `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
+Run`Simulation_study_Tyler.m` for \((p,n) = (20,100), (50,500), (100,500)\), with - `Ctype = 'BlockToeplitz'` and `'random'`, and - `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
 
 4) **GLASD–Huber estimator**
-
-Run  
-`Simulation_study.m`  
-for \((p,n) = (20,100), (50,500), (100,500)\), with  
-- `Ctype = 'BlockToeplitz'` and `'random'`, and  
-- `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
+Run`Simulation_study.m` for \((p,n) = (20,100), (50,500), (100,500)\), with - `Ctype = 'BlockToeplitz'` and `'random'`, and - `dist_type = 'gaussian_asymmetric_row', 'gaussian_asymmetric_col', 'gaussian_asymmetric_random', 't'`.
 
 5) **Summarize simulation outputs**
 
-After completing all simulation runs, execute  
-`Simulation_output/Summary.m`  
-and  
-`Simulation_output/Summary_FINAL_TABLE.m`  
-to generate the final summary table reported in the manuscript.
+After completing all simulation runs, execute `Simulation_output/Summary.m` and `Simulation_output/Summary_FINAL_TABLE.m` to generate the final summary table reported in the manuscript.
 
 **Note.** The full simulation outputs are large in size (`Simulation_data/` contains more than 300 files and `Simulation_output/` contains more than 800 files) and are therefore not included in this repository. Only the code files required to fully reproduce the results are provided.
