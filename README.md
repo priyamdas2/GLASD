@@ -63,7 +63,7 @@ subject to  C ∈ 𝒞<sub>M</sub>
 </pre>
 
 where  
-- \( 𝒞<sub>M</sub> \) denotes the space of full-rank \( M x M \) correlation matrices, and  
+- 𝒞<sub>M</sub> denotes the space of full-rank \( M x M \) correlation matrices, and  
 -  f(C) is a user-specified Mahalanobis-type objective function.
 
 This formulation accommodates a wide class of loss functions, including Gaussian likelihoods, Huber-type losses, truncated quadratic losses, and redescending M-estimators (e.g., Tukey’s biweight). Importantly, the resulting optimization problem is typically **non-convex, non-smooth, and sometimes discontinuous**, and is defined over a geometrically constrained parameter space.
