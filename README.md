@@ -28,7 +28,7 @@ GLASD is designed to reliably optimize **non-convex, non-smooth, and even discon
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```text
 
