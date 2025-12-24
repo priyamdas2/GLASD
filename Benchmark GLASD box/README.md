@@ -1,4 +1,4 @@
-## Empirical Convergence Study
+## Empirical Convergence Study of GLASD over Hyper-rectangular Domain
 
 This study evaluates empirical convergence behavior across **GLASD** and competing optimization methods for objective functions defined over a hyper-rectangular (box-constrained) parameter space.
 
